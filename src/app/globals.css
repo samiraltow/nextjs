@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .btn {
+    @apply px-[48px] py-[16px] bg-white text-[#232536] font-sen text-[18px] font-bold leading-[24px];
+  }
+  .body2 {
+    @apply text-[14px] font-inter font-normal  leading-[20px] text-[#FFFFFF] opacity-[0.6000000238418579];
+  }
+  .body1 {
+    @apply text-[16px] leading-[28px] font-inter text-[#6D6E76] font-normal;
+  }
+  .label1 {
+    @apply text-[14px] leading-[20px] font-inter font-medium;
+  }
+  .cap3 {
+    @apply text-[#232536] font-inter text-[16px] leading-[20px] font-medium tracking-[3px] uppercase;
+  }
+  .cap1 {
+    @apply font-inter text-[16px] font-semibold leading-[20px] tracking-[3px] uppercase text-[#592EA9];
+  }
+  .btn1 {
+    @apply px-16 py-4  bg-white border rounded-full text-black border-black font-sen;
+  }
+  .btn2 {
+    @apply px-16 py-4 text-[#232536] font-sen text-[24px] font-bold leading-[32px];
+  }
+  .btn3 {
+    @apply text-[#232536] font-sen text-[18px] font-bold leading-[24px];
+  }
+  .display {
+    @apply font-sen text-[56px] font-bold leading-[64px] tracking-[-2px];
+  }
+  .clr {
+    background: radial-gradient(
+      80.99% 71.93% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+  /* .hover-button {
+  
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #39d1ff 0%, #5c4dd3 100%);
+    background-size: 200% 100%;
+    transition-duration: 0.3s;
+    background-position: -100% 0%;
+   
+  } */
+  #fullname-input::placeholder {
+    color: #232536;
+  }
+  .bg {
+    background: var(--black, #232536);
+  }
+  .navtext {
+    color: var(--light, #fff);
+  }
+  .bg1 {
+    opacity: 0.05000000074505806;
+    background: var(--light, #fff);
+  }
+
+  .sb {
+    border: 5px solid red;
+  }
+  .bb {
+    border: 1px solid #e1e2e7;
+  }
+  /* Nav Component
+  .logo_text {
+    @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  }
+
+  .dropdown {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  }
+
+  .dropdown_link {
+    @apply text-sm font-serif text-gray-700 hover:text-gray-500 font-medium;
+  } */
+}
+
+@layer base {
+  h2 {
+    @apply text-[#232536] font-sen text-[36px] leading-[48px] font-bold tracking-[-2px];
+  }
+
+  h3 {
+    @apply font-sen  text-[28px] leading-[40px] tracking-[-1px] font-bold;
+  }
+  h1 {
+    @apply text-[48px] leading-[64px] font-bold font-sen tracking-[-2px] text-[#232536];
+  }
+  h4 {
+    @apply font-sen text-[#232536] font-bold  text-[24px]  leading-[32px];
+  }
+  h5 {
+    @apply font-sen text-[20px] font-bold leading-[32px];
+  }
+  h5 {
+    color: var(--light, #fff);
+  }
+  h6 {
+    @apply font-bold text-[16px] leading-[24px];
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 1280px;
+}
+@media (min-width: 640px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 80px);
+  }
+}
